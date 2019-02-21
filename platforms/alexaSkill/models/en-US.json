@@ -1,0 +1,63 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "food helper",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "getRestaurantsCity",
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.EUROPE_CITY"
+            }
+          ],
+          "samples": [
+            "get me restaurants in {city}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "boscaiola"
+              }
+            },
+            {
+              "name": {
+                "value": "capricciosa"
+              }
+            },
+            {
+              "name": {
+                "value": "margherita"
+              }
+            }
+          ],
+          "name": "pizza"
+        }
+      ]
+    }
+  }
+}

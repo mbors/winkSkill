@@ -1,0 +1,63 @@
+{
+	"invocation": "food helper",
+	"intents": [
+		{
+			"name": "getRestaurantsCity",
+			"phrases": [
+				"get me restaurants in {city}"
+			],
+			"inputs": [
+				{
+					"name": "city",
+					"type": {
+						"alexa": "AMAZON.EUROPE_CITY"
+					}
+				}
+			]
+		}
+	],
+	"inputTypes": [
+		{
+			"name": "pizza",
+			"values": [
+				{
+					"value": "boscaiola"
+				},
+				{
+					"value": "capricciosa"
+				},
+				{
+					"value": "margherita"
+				}
+			]
+		}
+	],
+	"alexa": {
+		"interactionModel": {
+			"languageModel": {
+				"intents": [
+					{
+						"name": "AMAZON.FallbackIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.CancelIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.HelpIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.StopIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.NavigateHomeIntent",
+						"samples": []
+					}
+				]
+			}
+		}
+	}
+}
